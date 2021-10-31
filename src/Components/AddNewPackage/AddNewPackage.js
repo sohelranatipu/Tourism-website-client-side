@@ -8,7 +8,7 @@ const AddNewPackage = () => {
     const { register, handleSubmit,reset } = useForm();
     const onSubmit = data => {
         console.log(data);
-        axios.post('http://localhost:5000/packages',data)
+        axios.post('https://frightful-moonlight-21065.herokuapp.com/packages',data)
         .then(res=> {
          if(res.data.insertedId){
              alert('Added SuccessFully');

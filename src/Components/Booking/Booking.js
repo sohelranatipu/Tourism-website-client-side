@@ -13,7 +13,7 @@ const Booking = () => {
 
     useEffect(()=>{
         
-        fetch(`http://localhost:5000/packages/${packageId}`)
+        fetch(`https://frightful-moonlight-21065.herokuapp.com/packages/${packageId}`)
         .then(res => res.json())
         .then(data => setmyPackage(data))
     },[])
